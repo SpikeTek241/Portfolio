@@ -1,0 +1,140 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.hover-underline:hover {
+    text-decoration: underline;
+}
+.text-burgundy {
+    color: #800020;
+}
+.bg-burgundy {
+    background-color: #800020;
+}
+
+ /* Global Colors */
+ .text-burgundy {
+    color: #800020;
+}
+
+.bg-burgundy {
+    background-color: #800020;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+}
+
+:root {
+    --burgundy: #800020;
+    --grey: #6b7280;
+    --light-grey: #d1d5db;
+    --dark-grey: #333333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--burgundy);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--burgundy);
+    transform: scale(1.05);
+}
+
+.button-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--burgundy);
+    color: var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid var(--burgundy);
+    transition: all 0.3s ease;
+}
+
+.button-contact:hover {
+    background: var(--white);
+    color: var(--burgundy);
+}
+
+/* Header Styles */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+}
+
+/* Form Styles */
+form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    border: 1px solid #d1d5db;
+    transition: all 0.3s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #800020;
+    outline: none;
+    box-shadow: 0 0 4px #800020;
+}
+
+form button {
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #5e0015;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Social Links */
+.social-links a {
+    font-size: 1.75rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #5e0015;
+}
+
+/* Footer */
+footer {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+    margin: 0;
+}
+

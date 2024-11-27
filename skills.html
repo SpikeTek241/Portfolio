@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Kevin Jerome's skillset, including web design, web development, digital marketing, and cybersecurity.">
+    <meta name="keywords" content="Kevin Jerome, skills, web design, web development, digital marketing, cybersecurity">
+    <title>My Skills - Kevin Jerome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="./Images/IMG_1058.png">
+</head>
+<body class="bg-gray-200 text-gray-900">
+    <header class="bg-white shadow-md sticky top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="logo-holder flex items-center space-x-4">
+                <img src="./Images/IMG_1058.png" alt="Logo" class="h-10 w-10">
+                <div class="text-2xl font-bold text-burgundy-800">Kevin Jerome</div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <ul id="menu" class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-burgundy-800 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-burgundy-800 transition">About</a></li>
+                    <li><a href="skills.html" class="hover:text-burgundy-800 transition">Skills</a></li>
+                    <li><a href="portfolio.html" class="hover:text-burgundy-800 transition">Portfolio</a></li>
+                    <li><a href="contact.html" class="button-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="md:hidden block" onClick="toggleMobileMenu();" aria-expanded="false" aria-label="Open Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu w-8 h-8 text-burgundy-800" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="4" y1="8" x2="20" y2="8" />
+                    <line x1="4" y1="16" x2="20" y2="16" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- Skills Section -->
+        <section class="skills-overview py-16 bg-white shadow-md rounded-lg">
+            <h1 class="text-4xl font-bold text-center text-burgundy-800 mb-6">My Skills</h1>
+            <p class="max-w-3xl mx-auto text-lg text-center text-gray-700 mb-12">
+                Here is a detailed look at my core skills and areas of expertise. I specialize in multiple facets of web development, design, digital strategy, and cybersecurity, allowing me to deliver comprehensive and quality solutions for my clients.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="skill-item p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-paint-brush text-4xl text-burgundy-800 mb-4"></i>
+                    <h2 class="text-2xl font-bold text-burgundy-800 mb-4">Web Design</h2>
+                    <p class="text-lg text-gray-700">Creating visually appealing and user-friendly designs that elevate your brand's online presence and captivate your audience.</p>
+                </div>
+
+                <div class="skill-item p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-code text-4xl text-burgundy-800 mb-4"></i>
+                    <h2 class="text-2xl font-bold text-burgundy-800 mb-4">Web Development</h2>
+                    <p class="text-lg text-gray-700">Building fast, responsive, and feature-rich websites using the latest technologies, ensuring seamless experiences across all devices.</p>
+                </div>
+
+                <div class="skill-item p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-server text-4xl text-burgundy-800 mb-4"></i>
+                    <h2 class="text-2xl font-bold text-burgundy-800 mb-4">Backend Development</h2>
+                    <p class="text-lg text-gray-700">Developing robust backend architectures with databases and server-side logic to support dynamic content and functionality.</p>
+                </div>
+
+                <div class="skill-item p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-bullhorn text-4xl text-burgundy-800 mb-4"></i>
+                    <h2 class="text-2xl font-bold text-burgundy-800 mb-4">Digital Marketing</h2>
+                    <p class="text-lg text-gray-700">Crafting and executing digital marketing strategies to improve online visibility and connect with your target audience effectively.</p>
+                </div>
+
+                <div class="skill-item p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-lock text-4xl text-burgundy-800 mb-4"></i>
+                    <h2 class="text-2xl font-bold text-burgundy-800 mb-4">Cybersecurity</h2>
+                    <p class="text-lg text-gray-700">Implementing security best practices to protect websites and sensitive data, ensuring a safe user experience.</p>
+                </div>
+
+                <div class="skill-item p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-lightbulb text-4xl text-burgundy-800 mb-4"></i>
+                    <h2 class="text-2xl font-bold text-burgundy-800 mb-4">Problem Solving</h2>
+                    <p class="text-lg text-gray-700">Applying analytical thinking and creativity to solve challenging technical problems and deliver efficient, scalable solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="technical-skills py-16 mt-12">
+            <h2 class="text-3xl font-bold text-center text-burgundy-800 mb-8">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-burgundy-800 mb-4">Languages</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700">
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-burgundy-800 mb-4">Frameworks & Libraries</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700">
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-burgundy-800 mb-4">Tools & Platforms</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700">
+                        <li>Git & GitHub</li>
+                        <li>Figma</li>
+                        <li>WordPress</li>
+                        <li>Google Analytics</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Skills Section -->
+        <section class="soft-skills py-16 mt-12 bg-white shadow-md rounded-lg">
+            <h2 class="text-3xl font-bold text-center text-burgundy-800 mb-8">Soft Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-users text-4xl text-burgundy-800 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-burgundy-800 mb-4">Teamwork</h3>
+                    <p class="text-lg text-gray-700">Collaborating effectively with team members to achieve project goals and ensure a positive work environment.</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-comments text-4xl text-burgundy-800 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-burgundy-800 mb-4">Communication</h3>
+                    <p class="text-lg text-gray-700">Articulating ideas clearly and effectively in both written and verbal formats to stakeholders and team members.</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+                    <i class="fas fa-chart-line text-4xl text-burgundy-800 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-burgundy-800 mb-4">Adaptability</h3>
+                    <p class="text-lg text-gray-700">Adjusting to new challenges, environments, and technologies to consistently deliver high-quality work.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-light-grey py-6">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/kevin-jerome-10371a234/" target="_blank" class="text-grey hover:text-burgundy transition" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://github.com/SpikeTek241" target="_blank" class="text-grey hover:text-burgundy transition" aria-label="GitHub Profile">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="mailto:blade94781kj@gmail.com" target="_blank" class="text-grey hover:text-burgundy transition" aria-label="Email Kevin Jerome">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+            </div>
+            <p class="text-grey">&copy; 2024 Kevin Jerome. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

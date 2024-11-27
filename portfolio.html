@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kevin Jerome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="Images/IMG_1058.png">
+</head>
+<body class="bg-gray-200 text-gray-900 flex flex-col min-h-screen">
+    <header class="bg-white shadow-md sticky top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="logo-holder flex items-center space-x-4">
+                <img src="Images/IMG_1058.png" alt="Logo" class="h-10 w-10">
+                <div class="text-2xl font-bold text-burgundy-800">Kevin Jerome</div>
+            </div>
+
+            <nav class="hidden md:flex space-x-8">
+                <ul id="menu" class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-burgundy-800 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-burgundy-800 transition">About</a></li>
+                    <li><a href="skills.html" class="hover:text-burgundy-800 transition">Skills</a></li>
+                    <li><a href="portfolio.html" class="hover:text-burgundy-800 transition">Portfolio</a></li>
+                    <li><a href="contact.html" class="button-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="md:hidden block" onClick="toggleMobileMenu();" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu w-8 h-8 text-burgundy-800" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="4" y1="8" x2="20" y2="8" />
+                    <line x1="4" y1="16" x2="20" y2="16" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    
+<main class="container mx-auto px-6 py-12 flex-grow">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio py-16">
+        <h2 class="text-3xl font-bold text-center text-burgundy-800 mb-8">My Portfolio</h2>
+        <div class="flex justify-center">
+            <div class="portfolio-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- First Project -->
+                <a href="https://github.com/SpikeTek241/UEE" target="_blank" class="portfolio-item relative block">
+                    <img src="Projects/UEE Project.png" alt="Project 1" class="w-full h-60 object-cover rounded-lg">
+                    <div class="portfolio-overlay absolute inset-0 bg-burgundy-800 bg-opacity-75 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                        <div class="text-center text-white">
+                            <h4 class="text-2xl font-bold mb-2">Universal Education Empowerment</h4>
+                            <p>Project that I did with CodePath to design and create a one page site utilizing HTML5, CSS3, and JavaScript3</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Second Project -->
+                <a href="https://github.com/SpikeTek241/Portfolio" target="_blank" class="portfolio-item relative block">
+                    <img src="Projects/Personal-Portfolio.png" alt="Project 2" class="w-full h-60 object-cover rounded-lg">
+                    <div class="portfolio-overlay absolute inset-0 bg-burgundy-800 bg-opacity-75 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                        <div class="text-center text-white">
+                            <h4 class="text-2xl font-bold mb-2">Personal Portfolio</h4>
+                            <p>Utilizing HTML5, CSS3, and Javascript to create a website from scratch with tailwindcss elements.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Third Project -->
+                <a href="" target="" class="portfolio-item relative block">
+                    <img src="Images/Coming-Soon.png" alt="Coming-Soon" class="w-ful h-60 object-cover rounded-lg">
+                    <div class="portfolio-overlay absolute inset-0 bg-burgundy-800 bg-opacity-75 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                        <div class="text-center text-white">
+                            <h4 class="text-2xl font-bold mb-2">Coming Soon</h4>
+                            <p></p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-white border-t border-light-grey py-6">
+    <div class="container mx-auto text-center">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://www.linkedin.com/in/kevin-jerome-10371a234/" target="_blank" class="text-grey hover:text-burgundy transition" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://github.com/SpikeTek241" target="_blank" class="text-grey hover:text-burgundy transition" aria-label="GitHub Profile">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a href="mailto:blade94781kj@gmail.com" target="_blank" class="text-grey hover:text-burgundy transition" aria-label="Email Kevin Jerome">
+                <i class="fas fa-envelope text-2xl"></i>
+            </a>
+        </div>
+        <p class="text-grey">&copy; 2024 Kevin Jerome. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
